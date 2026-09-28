@@ -129,13 +129,48 @@ Claude
 
 
  # Final System : 
-  ```mermaid
-flowchart TD
-    subgraph LOGISIM["LOGISIM"]
-        CE["Circuit Editor"]
-        AI_UI["AI Assistant"]
-    end
-
-    LOGISIM --> AIService["AI Service
+```text
+                         LOGISIM
+┌─────────────────────────────────────────────────────┐
+│                                                     │
+│                  Circuit Editor                     │
+│                                                     │
+│              A ─── XOR ─── OUT                      │
+│              B ────┘                                │
+│                                                     │
+├─────────────────────────────────────────────────────┤
+│                                                     │
+│ AI Assistant                                        │
+│                                                     │
+│ User: "Turn this into a full adder"                 │
+│                                                     │
+└──────────────────────┬──────────────────────────────┘
+                       │
+                       ▼
+              ┌─────────────────┐
+              │   AI Service    │
+              │                 │
+              │ Context Builder │
+              │ Tool Manager    │
+              │ Claude Client   │
+              └───────┬─────────┘
+                      │
+              ┌───────┴────────┐
+              │                │
+              ▼                ▼
+       Circuit Context     Tool Calls
+              │                │
+              │        ┌───────┼────────┐
+              │        │       │        │
+              │       Add   Connect  Simulate
+              │        │       │        │
+              └────────┴───────┴────────┘
+                       │
+                       ▼
+                  Logisim Core
+                       │
+                       ▼
+                    Circuit
+```
  
  
