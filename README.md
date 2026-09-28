@@ -69,3 +69,19 @@ flowchart TD
 
   
 }
+
+
+# Claude Will :
+Claude
+   │
+   ├── read_circuit()
+   ├── get_component()
+   ├── get_signal()
+   ├── simulate()
+   ├── add_component()
+   ├── remove_component()
+   ├── connect()
+   └── modify_component()
+
+
+ 
