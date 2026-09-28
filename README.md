@@ -1,4 +1,8 @@
+## Global Architecture
+
 ```mermaid
+
+
 flowchart TD
     LOGISIM --> CM[Circuit Model]
     LOGISIM --> UI[UI / GUI]
