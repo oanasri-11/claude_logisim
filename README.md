@@ -28,3 +28,28 @@ flowchart TD
         ▼
      Claude
 ```
+
+
+
+# Example of JsON Structure : 
+
+
+ {
+  "circuit": "Main",
+  "inputs": ["A", "B"],
+  "outputs": ["OUT"],
+
+  "components": [
+    {
+      "id": "and1",
+      "type": "AND",
+      "inputs": 2
+    }
+  ],
+
+  "connections": [
+    {"from": "A", "to": "and1.in1"},
+    {"from": "B", "to": "and1.in2"},
+    {"from": "and1.out", "to": "OUT"}
+  ]
+}
