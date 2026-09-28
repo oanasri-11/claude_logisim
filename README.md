@@ -126,5 +126,16 @@ Claude
 │ Ask Claude...                  [➤]  │
 └─────────────────────────────────────┘
 ```
+
+
+ # Final System : 
+  ```mermaid
+flowchart TD
+    subgraph LOGISIM["LOGISIM"]
+        CE["Circuit Editor"]
+        AI_UI["AI Assistant"]
+    end
+
+    LOGISIM --> AIService["AI Service
  
  
