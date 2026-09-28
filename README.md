@@ -104,4 +104,27 @@ Claude
 ```
 
 
+
+# AI Panel in the Future : 
+ ```text
+┌─────────────────────────────────────┐
+│ AI Assistant                        │
+├─────────────────────────────────────┤
+│                                     │
+│ You:                                │
+│ Why doesn't my circuit work?        │
+│                                     │
+│ Claude:                             │
+│ I found two possible problems:      │
+│                                     │
+│ 1. AND1 input 2 is floating.        │
+│ 2. XOR1 output isn't connected...   │
+│                                     │
+│ [Apply fix]                         │
+│                                     │
+├─────────────────────────────────────┤
+│ Ask Claude...                  [➤]  │
+└─────────────────────────────────────┘
+```
+ 
  
