@@ -1,5 +1,8 @@
  # Global Architecture :
-                      LOGISIM
+
+
+
+                     
                        │
         ┌──────────────┼──────────────┐
         │              │              │
