@@ -36,8 +36,14 @@ flowchart TD
 
  {
   "circuit": "Main",
+
+  
   "inputs": ["A", "B"],
+
+  
   "outputs": ["OUT"],
+  
+  
 
   "components": [
     {
@@ -45,11 +51,21 @@ flowchart TD
       "type": "AND",
       "inputs": 2
     }
+
+    
   ],
 
   "connections": [
+  
     {"from": "A", "to": "and1.in1"},
+    
+    
     {"from": "B", "to": "and1.in2"},
+    
     {"from": "and1.out", "to": "OUT"}
+    
   ]
+
+
+  
 }
