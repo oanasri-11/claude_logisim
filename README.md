@@ -15,3 +15,16 @@ flowchart TD
     AI --> TS[Tool System]
     AI --> API[Claude API]
 ```
+# Main Part :
+```text
+ Logisim Circuit
+        │
+        ▼
+ Circuit Representation
+        │
+        ▼
+   AI Context
+        │
+        ▼
+     Claude
+```
