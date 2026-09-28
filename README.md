@@ -84,4 +84,24 @@ Claude
     modify_component()
 
 
+
+# Better Architecture View :  
+ ```text
+                    Claude
+                       │
+                ┌──────┴──────┐
+                │             │
+             Reasoning      Tools
+                              │
+                ┌─────────────┼─────────────┐
+                │             │             │
+              Read         Modify        Simulate
+             Circuit       Circuit       Circuit
+                │             │             │
+                └─────────────┼─────────────┘
+                              │
+                           Logisim
+```
+
+
  
