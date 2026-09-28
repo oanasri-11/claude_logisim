@@ -1,25 +1,13 @@
- # Global Architecture :
+```mermaid
+flowchart TD
+    LOGISIM --> CM[Circuit Model]
+    LOGISIM --> UI[UI / GUI]
+    LOGISIM --> SIM[Simulation]
 
-
-
-                     
-                       │
-        ┌──────────────┼──────────────┐
-        │              │              │
-        ▼              ▼              ▼
-   Circuit Model    UI / GUI      Simulation
-        │
-        │
-        ▼
-   AI Integration
-        │
-        ├── Circuit → JSON
-        │
-        ├── Context Manager
-        │
-        ├── Tool System
-        │
-        └── Claude API
-                  │
-                  ▼
-              Claude
+    CM --> AI[AI Integration]
+    
+    AI --> CJ[Circuit → JSON]
+    AI --> CTX[Context Manager]
+    AI --> TS[Tool System]
+    AI --> API[Claude API]
+```
